@@ -3,7 +3,6 @@ package github.com.http.sdk.demoservice;
 import com.alibaba.fastjson.annotation.JSONField;
 import github.com.http.sdk.anno.Http;
 import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.constant.WechatConst;
 
 
 /**
