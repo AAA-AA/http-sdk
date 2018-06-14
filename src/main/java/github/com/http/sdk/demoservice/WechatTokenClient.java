@@ -3,7 +3,6 @@ package github.com.http.sdk.demoservice;
 import github.com.http.sdk.anno.Http;
 import github.com.http.sdk.anno.HttpParam;
 import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.constant.WechatConst;
 import github.com.http.sdk.entity.response.TokenResp;
 
 
@@ -11,7 +10,7 @@ import github.com.http.sdk.entity.response.TokenResp;
  * @author : hongqiangren.
  * @since: 2018/6/12 18:02
  */
-@RootApi(root = WechatConst.WECHAT_SERVER_ROOT_URL)
+@RootApi(root = "https://api.weixin.qq.com")
 public interface WechatTokenClient {
 
     /**

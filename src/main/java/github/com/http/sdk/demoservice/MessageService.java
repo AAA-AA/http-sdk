@@ -10,7 +10,7 @@ import github.com.http.sdk.constant.WechatConst;
  * @author : hongqiangren.
  * @since: 2018/6/12 18:02
  */
-@RootApi(root = WechatConst.WECHAT_SERVER_ROOT_URL)
+@RootApi(root = "https://api.weixin.qq.com")
 public interface MessageService {
 
     @Http(method = Http.Method.GET,path = "cgi-bin/template/api_set_industry",request = Http.Content.JSON, response = Http.Content.JSON)

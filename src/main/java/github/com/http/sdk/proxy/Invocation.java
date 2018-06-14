@@ -32,6 +32,11 @@ public interface Invocation {
     Object[] getParameters();
 
     /**
+     * add query parameter
+     */
+    IRequestQuery addQuery(String key, Object value);
+
+    /**
      * return type
      */
     Type returnType();

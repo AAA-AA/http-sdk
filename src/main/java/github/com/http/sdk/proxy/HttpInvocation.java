@@ -105,6 +105,11 @@ public class HttpInvocation implements Invocation {
     }
 
     @Override
+    public IRequestQuery addQuery(String key, Object value) {
+        return this.requestQuery.addQuery(key, value);
+    }
+
+    @Override
     public Type returnType() {
         return this.method.getGenericReturnType();
     }
