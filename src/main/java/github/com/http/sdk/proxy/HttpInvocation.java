@@ -1,16 +1,16 @@
 package github.com.http.sdk.proxy;
 
 import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.builder.IRequestBody;
 import github.com.http.sdk.anno.HttpParam;
+import github.com.http.sdk.anno.RootApi;
+import github.com.http.sdk.anno.TempParam;
+import github.com.http.sdk.builder.IRequestBody;
 import github.com.http.sdk.builder.IRequestQuery;
 import github.com.http.sdk.builder.RequestBody;
 import github.com.http.sdk.builder.RequestQuery;
 import github.com.http.sdk.handler.ParamSerializer;
 import github.com.http.sdk.utils.Clean;
 
-import java.beans.Transient;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
@@ -58,7 +58,7 @@ public class HttpInvocation implements Invocation {
             if (null == arguments[i]) {
                 continue;
             }
-            if (pas[i].isAnnotationPresent(Transient.class)) {
+            if (pas[i].isAnnotationPresent(TempParam.class)) {
                 this.tran.put(pas[i].getName(), arguments[i]);
                 continue;
             }

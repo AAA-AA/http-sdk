@@ -35,7 +35,7 @@ public final class HttpProxy implements Proxy {
     public <T> T proxy(Class<T> service) {
         RootApi remote = service.getAnnotation(RootApi.class);
         if (null == remote) {
-            throw new UnsupportedOperationException("Remote request interface must annotated with @Remote.");
+            throw new UnsupportedOperationException("Remote request interface must annotated with @RootApi.");
         }
         return (T) java.lang.reflect.Proxy.newProxyInstance(service.getClassLoader(), new Class<?>[]{service}, new HttpInvoker(remote, invoker));
     }

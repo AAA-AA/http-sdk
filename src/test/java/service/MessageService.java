@@ -1,4 +1,4 @@
-package github.com.http.sdk.demoservice;
+package service;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import github.com.http.sdk.anno.Http;
@@ -13,7 +13,7 @@ import github.com.http.sdk.anno.RootApi;
 public interface MessageService {
 
     @Http(method = Http.Method.GET,path = "cgi-bin/template/api_set_industry",request = Http.Content.JSON, response = Http.Content.JSON)
-    void setIndustry(Long brandId, @JSONField(name = "industry_id1") int industryId1, @JSONField(name = "industry_id2")int industryId2);
+    void setIndustry(Long brandId, @JSONField(name = "industry_id1") int industryId1, @JSONField(name = "industry_id2") int industryId2);
 
     /**
      * 获取用户基本信息
@@ -23,6 +23,6 @@ public interface MessageService {
      * @return
      */
     @Http(path = "cgi-bin/user/info", method = Http.Method.GET, response = Http.Content.JSON)
-    String loadUser(String accessToken,String openid, String lang);
+    String loadUser(String accessToken, String openid, String lang);
 
 }

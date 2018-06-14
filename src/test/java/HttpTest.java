@@ -1,6 +1,6 @@
-import github.com.http.sdk.demoservice.WechatTokenClient;
 import github.com.http.sdk.entity.response.TokenResp;
 import github.com.http.sdk.proxy.HttpProxy;
+import service.WechatTokenClient;
 
 /**
  * @author : hongqiangren.
@@ -14,7 +14,7 @@ public class HttpTest {
         String appId = "";//微信appid
         String secret = "";//微信secret
         String grantType = "client_credential";
-        TokenResp user = wechatApi.loadToken(appId, secret, grantType);
+        TokenResp user = wechatApi.loadToken(12L, appId, secret, grantType);
 
 
     }
