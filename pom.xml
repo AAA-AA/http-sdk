@@ -6,11 +6,11 @@
 
     <groupId>com.github</groupId>
     <artifactId>http-sdk</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
 
 
     <properties>
-        <httpSdkVersion>1.0.1-SNAPSHOT</httpSdkVersion>
+        <httpSdkVersion>1.2.0-SNAPSHOT</httpSdkVersion>
         <sourceEncoding>UTF-8</sourceEncoding>
         <lombokVersion>1.16.18</lombokVersion>
         <fastjsonVersion>1.2.36</fastjsonVersion>
