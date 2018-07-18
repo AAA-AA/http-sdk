@@ -2,6 +2,7 @@ package github.com.http.sdk.exception;
 
 import github.com.http.sdk.utils.Clean;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -42,9 +43,21 @@ public class HttpException extends RuntimeException {
     }
 
     public static void main(String[] args) {
-        String test = "this is test %s {}{}{}";
+        String test = "this is test %s {} {} {}";
 
         String result = format(test,1,2,"demo");
+
+        System.out.println(result);
+        String regx = "\\$\\{[a-zA-Z]*\\}";
+        Pattern pattern = Pattern.compile(regx);
+
+        String testStr2 = "wo huo yi , ${matter}, ${dies}";
+        Matcher matcher = pattern.matcher(testStr2);
+        while (matcher.find()) {
+            String group = matcher.group().replaceAll("\\$\\{","").replaceAll("\\}","");
+            System.out.println(group);
+        }
+
     }
 
     public HttpException(String message) {

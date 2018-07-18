@@ -20,6 +20,7 @@ LICENSE.txt
 *.eml
 rebel.xml
 .idea/
+/target/
 MANIFEST.MF
 out/test/*
 out/production/*

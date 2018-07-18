@@ -8,11 +8,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Random;
 import java.util.function.Supplier;
+
 
 /**
  * @author : hongqiangren.
@@ -162,5 +164,25 @@ public final class Clean {
             }
             return output.toByteArray();
         });
+    }
+
+    public static boolean isProxyClass(Class<?> clazz) {
+        return isJDKProxy(clazz) || isCGLIBProxy(clazz);
+    }
+
+    public static boolean isJDKProxy(Class<?> clazz) {
+        return clazz != null && Proxy.isProxyClass(clazz);
+    }
+
+    public static boolean isCGLIBProxy(Class<?> clazz) {
+        return clazz != null && null != clazz.getName() && clazz.getName().contains("$$");
+    }
+
+    public static boolean expectGreedScan(Class<?> beanClass) {
+        return null != beanClass && beanClass != Object.class && !isBasicType(beanClass)
+                && !isProxyClass(beanClass) && !beanClass.isInterface() && !beanClass.isEnum()
+                && !beanClass.isAnnotation() && null != beanClass.getPackage()
+                && !isBlank(beanClass.getPackage().getName())
+                && !beanClass.getPackage().getName().startsWith("java");
     }
 }

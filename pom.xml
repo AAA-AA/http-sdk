@@ -19,9 +19,16 @@
         <logbackVersion>1.1.3</logbackVersion>
         <httpVersion>4.5.3</httpVersion>
         <logbackVersion>1.0.13</logbackVersion>
+        <springVersion>5.0.2.RELEASE</springVersion>
     </properties>
     <dependencies>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springVersion}</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- http begin -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
