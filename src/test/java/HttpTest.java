@@ -1,6 +1,4 @@
-import github.com.http.sdk.entity.response.TokenResp;
-import github.com.http.sdk.proxy.HttpProxy;
-import service.WechatTokenClient;
+
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

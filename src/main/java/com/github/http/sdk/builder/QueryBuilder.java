@@ -1,9 +1,8 @@
 package com.github.http.sdk.builder;
 
 import com.github.http.sdk.anno.Http;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.proxy.Invocation;
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.proxy.Invocation;
+import com.github.http.sdk.utils.Clean;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHeaders;

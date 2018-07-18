@@ -1,11 +1,10 @@
 package service;
 
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.anno.HttpParam;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.anno.TempParam;
-import github.com.http.sdk.entity.response.TokenResp;
 
+import com.github.http.sdk.anno.Http;
+import com.github.http.sdk.anno.HttpParam;
+import com.github.http.sdk.anno.RootApi;
+import com.github.http.sdk.anno.TempParam;
 
 /**
  * @author : hongqiangren.
@@ -21,6 +20,6 @@ public interface WechatTokenClient {
      * @param grantType
      */
     @Http(method = Http.Method.GET, path = "cgi-bin/token", request = Http.Content.JSON, response = Http.Content.JSON)
-    TokenResp loadToken(@TempParam Long brandId, @HttpParam(name = "appid") String appId, String secret, @HttpParam(name = "grant_type") String grantType);
+    String loadToken(@TempParam Long brandId, @HttpParam(name = "appid") String appId, String secret, @HttpParam(name = "grant_type") String grantType);
 
 }

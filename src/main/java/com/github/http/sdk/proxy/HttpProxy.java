@@ -1,8 +1,8 @@
 package com.github.http.sdk.proxy;
 
 
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.anno.RootApi;
+import com.github.http.sdk.utils.Clean;
 
 /**
  * @author coyzeng@gmail.com

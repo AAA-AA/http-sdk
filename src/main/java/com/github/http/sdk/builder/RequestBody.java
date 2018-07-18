@@ -2,9 +2,7 @@ package com.github.http.sdk.builder;
 
 import com.github.http.sdk.anno.Http;
 import com.github.http.sdk.anno.RootApi;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.handler.ParamSerializer;
 
 import java.util.HashMap;
 import java.util.Map;

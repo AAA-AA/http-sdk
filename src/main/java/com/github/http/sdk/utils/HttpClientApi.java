@@ -1,7 +1,6 @@
 package com.github.http.sdk.utils;
 
 import com.github.http.sdk.anno.HttpParam;
-import github.com.http.sdk.anno.HttpParam;
 import org.apache.http.*;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;

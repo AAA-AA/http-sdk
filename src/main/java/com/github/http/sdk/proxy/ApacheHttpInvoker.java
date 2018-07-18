@@ -1,7 +1,6 @@
 package com.github.http.sdk.proxy;
 
 import com.github.http.sdk.core.HttpClient;
-import github.com.http.sdk.core.HttpClient;
 
 /**
  * @author : hongqiangren.

@@ -2,8 +2,6 @@ package com.github.http.sdk.spring;
 
 import com.github.http.sdk.anno.RootApi;
 import com.github.http.sdk.proxy.HttpProxy;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.proxy.HttpProxy;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

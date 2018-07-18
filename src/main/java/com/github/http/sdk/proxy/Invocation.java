@@ -1,8 +1,7 @@
 package com.github.http.sdk.proxy;
 
 import com.github.http.sdk.builder.IRequestBody;
-import github.com.http.sdk.builder.IRequestBody;
-import github.com.http.sdk.builder.IRequestQuery;
+import com.github.http.sdk.builder.IRequestQuery;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

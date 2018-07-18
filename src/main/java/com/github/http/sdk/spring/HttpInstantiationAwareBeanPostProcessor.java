@@ -1,6 +1,6 @@
 package com.github.http.sdk.spring;
 
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.utils.Clean;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessorAdapter;
 import org.springframework.core.Ordered;

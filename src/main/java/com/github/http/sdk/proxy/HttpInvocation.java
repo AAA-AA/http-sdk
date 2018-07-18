@@ -1,16 +1,15 @@
 package com.github.http.sdk.proxy;
 
+import com.github.http.sdk.anno.Http;
 import com.github.http.sdk.anno.HttpParam;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.anno.HttpParam;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.anno.TempParam;
-import github.com.http.sdk.builder.IRequestBody;
-import github.com.http.sdk.builder.IRequestQuery;
-import github.com.http.sdk.builder.RequestBody;
-import github.com.http.sdk.builder.RequestQuery;
-import github.com.http.sdk.handler.ParamSerializer;
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.anno.RootApi;
+import com.github.http.sdk.anno.TempParam;
+import com.github.http.sdk.builder.IRequestBody;
+import com.github.http.sdk.builder.IRequestQuery;
+import com.github.http.sdk.builder.RequestBody;
+import com.github.http.sdk.builder.RequestQuery;
+import com.github.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.utils.Clean;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

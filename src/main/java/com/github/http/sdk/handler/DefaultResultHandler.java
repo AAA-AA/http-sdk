@@ -3,10 +3,7 @@ package com.github.http.sdk.handler;
 import com.github.http.sdk.anno.Http;
 import com.github.http.sdk.anno.Key;
 import com.github.http.sdk.protocol.XML;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.protocol.XML;
-import github.com.http.sdk.anno.Key;
-import github.com.http.sdk.proxy.Invocation;
+import com.github.http.sdk.proxy.Invocation;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

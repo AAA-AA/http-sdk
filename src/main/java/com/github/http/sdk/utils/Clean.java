@@ -3,9 +3,6 @@ package com.github.http.sdk.utils;
 import com.github.http.sdk.exception.HttpException;
 import com.github.http.sdk.function.TExecutor;
 import com.github.http.sdk.function.VoidExecutor;
-import github.com.http.sdk.exception.HttpException;
-import github.com.http.sdk.function.TExecutor;
-import github.com.http.sdk.function.VoidExecutor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;

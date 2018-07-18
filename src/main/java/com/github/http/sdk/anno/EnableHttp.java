@@ -1,6 +1,6 @@
 package com.github.http.sdk.anno;
 
-import github.com.http.sdk.spring.HttpConfig;
+import com.github.http.sdk.spring.HttpConfig;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.Documented;

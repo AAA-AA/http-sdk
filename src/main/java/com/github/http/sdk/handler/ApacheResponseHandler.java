@@ -1,8 +1,7 @@
 package com.github.http.sdk.handler;
 
 import com.github.http.sdk.exception.HttpException;
-import github.com.http.sdk.exception.HttpException;
-import github.com.http.sdk.proxy.Invocation;
+import com.github.http.sdk.proxy.Invocation;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

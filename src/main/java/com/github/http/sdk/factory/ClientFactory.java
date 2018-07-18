@@ -2,11 +2,9 @@ package com.github.http.sdk.factory;
 
 
 import com.github.http.sdk.anno.RootApi;
+import com.github.http.sdk.function.VoidExecutor;
 import com.github.http.sdk.ssl.SSLHandler;
-import github.com.http.sdk.anno.RootApi;
-import github.com.http.sdk.ssl.SSLHandler;
-import github.com.http.sdk.utils.Clean;
-import github.com.http.sdk.function.VoidExecutor;
+import com.github.http.sdk.utils.Clean;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;

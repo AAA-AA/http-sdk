@@ -1,12 +1,11 @@
 package com.github.http.sdk.anno;
 
+import com.github.http.sdk.filter.Filter;
+import com.github.http.sdk.handler.DefaultParamSerializer;
+import com.github.http.sdk.handler.DefaultResultHandler;
+import com.github.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.handler.ResultHandler;
 import com.github.http.sdk.ssl.SSLHandler;
-import github.com.http.sdk.filter.Filter;
-import github.com.http.sdk.handler.DefaultParamSerializer;
-import github.com.http.sdk.handler.DefaultResultHandler;
-import github.com.http.sdk.handler.ParamSerializer;
-import github.com.http.sdk.handler.ResultHandler;
-import github.com.http.sdk.ssl.SSLHandler;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Inherited;

@@ -1,7 +1,6 @@
 package com.github.http.sdk.handler;
 
 import com.github.http.sdk.anno.Http;
-import github.com.http.sdk.anno.Http;
 
 /**
  * @author : hongqiangren.

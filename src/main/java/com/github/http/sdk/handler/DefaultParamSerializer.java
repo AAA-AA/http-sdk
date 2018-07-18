@@ -3,9 +3,7 @@ package com.github.http.sdk.handler;
 import com.alibaba.fastjson.JSON;
 import com.github.http.sdk.anno.Http;
 import com.github.http.sdk.protocol.XML;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.protocol.XML;
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.utils.Clean;
 
 /**
  * @author : hongqiangren.

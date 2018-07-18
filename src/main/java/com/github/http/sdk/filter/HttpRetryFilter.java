@@ -4,10 +4,6 @@ import com.github.http.sdk.anno.Http;
 import com.github.http.sdk.proxy.Invocation;
 import com.github.http.sdk.proxy.Invoker;
 import com.github.http.sdk.utils.Clean;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.proxy.Invocation;
-import github.com.http.sdk.proxy.Invoker;
-import github.com.http.sdk.utils.Clean;
 
 /**
  * @author : hongqiangren.

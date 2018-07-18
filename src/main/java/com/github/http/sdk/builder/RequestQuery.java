@@ -1,6 +1,7 @@
 package com.github.http.sdk.builder;
 
-import github.com.http.sdk.utils.Clean;
+
+import com.github.http.sdk.utils.Clean;
 
 import java.net.URLEncoder;
 

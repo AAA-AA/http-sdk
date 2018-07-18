@@ -1,8 +1,7 @@
 package com.github.http.sdk.builder;
 
 import com.github.http.sdk.anno.Http;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.handler.ParamSerializer;
 
 /**
  * @author : hongqiangren.

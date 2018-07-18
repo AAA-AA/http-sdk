@@ -1,7 +1,8 @@
 package com.github.http.sdk.proxy;
 
-import github.com.http.sdk.handler.ParamSerializer;
-import github.com.http.sdk.handler.ResultHandler;
+
+import com.github.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.handler.ResultHandler;
 
 /**
  * @author : hongqiangren.

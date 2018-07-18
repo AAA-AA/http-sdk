@@ -1,14 +1,14 @@
 package com.github.http.sdk.proxy;
 
-import github.com.http.sdk.filter.HttpLogFilter;
-import github.com.http.sdk.filter.HttpRetryFilter;
-import github.com.http.sdk.exception.HttpException;
-import github.com.http.sdk.filter.Filter;
-import github.com.http.sdk.handler.DefaultParamSerializer;
-import github.com.http.sdk.handler.DefaultResultHandler;
-import github.com.http.sdk.handler.ParamSerializer;
-import github.com.http.sdk.handler.ResultHandler;
-import github.com.http.sdk.utils.Clean;
+import com.github.http.sdk.exception.HttpException;
+import com.github.http.sdk.filter.Filter;
+import com.github.http.sdk.filter.HttpLogFilter;
+import com.github.http.sdk.filter.HttpRetryFilter;
+import com.github.http.sdk.handler.DefaultParamSerializer;
+import com.github.http.sdk.handler.DefaultResultHandler;
+import com.github.http.sdk.handler.ParamSerializer;
+import com.github.http.sdk.handler.ResultHandler;
+import com.github.http.sdk.utils.Clean;
 import org.apache.http.client.RedirectException;
 
 import java.util.ArrayList;
@@ -22,8 +22,8 @@ import java.util.stream.Collectors;
  */
 public class HttpExecution implements Execution<Object>, Invoker<Object> {
     private String               server           = "http://localhost";
-    private ResultHandler        resultHandler    = new DefaultResultHandler();
-    private ParamSerializer      httpSerializer   = new DefaultParamSerializer();
+    private ResultHandler resultHandler    = new DefaultResultHandler();
+    private ParamSerializer httpSerializer   = new DefaultParamSerializer();
     private Invoker<?>           chainInvoker;
     private Invoker<?>           httpInvoker;
 

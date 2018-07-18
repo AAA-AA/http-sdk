@@ -1,8 +1,8 @@
 package service;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import github.com.http.sdk.anno.Http;
-import github.com.http.sdk.anno.RootApi;
+import com.github.http.sdk.anno.Http;
+import com.github.http.sdk.anno.RootApi;
 
 
 /**

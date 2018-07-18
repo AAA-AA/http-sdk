@@ -4,7 +4,8 @@ package com.github.http.sdk.protocol;
 
 
 
-import github.com.http.sdk.utils.Clean;
+
+import com.github.http.sdk.utils.Clean;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

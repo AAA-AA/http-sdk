@@ -1,6 +1,7 @@
 package com.github.http.sdk.exception;
 
-import github.com.http.sdk.utils.Clean;
+
+import com.github.http.sdk.utils.Clean;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
